@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sad Tree Books presents: Roots Of Liberty (An Amerian Poem)</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/x-icon;base64,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">
+
+    <meta name="article-01" content="npub10f53sm6qgxavwqf55dn886nd6ua7q4ed3qn3fjhc6kj0jkg5qu2qp5juec"/>
+    <meta name="article-02" content="npub10z3p48cjyjdyrul3z6z0zxuye3aa6mlmt59c8jq8cwemwkawyy4qwtv55h"/>
+    <meta name="article-03" content="npub1j3xyfwmvq97v2pkwnhdvyhp2h4vjzrzk2r4yvsdd7ru9lyw002eqn96ekl"/>
+
+    <meta name="amendment-01" content="npub1x6rh7sxhqnhnanwhueeh6y0fqrcz54wt3xk79y0q60s7c9syfz8sau6hwa"/>
+    <meta name="amendment-02" content="npub1m50l20009cp6e96wjadfg49ezf7rv96eq72uy4gqujgkddwtu7jsdg46hj"/>
+    <meta name="amendment-03" content="npub165f4pa6r5r3lwzjye5lcr2pcumeks3m3m47fpxf2rj9jp6pzrpdqzvmgjh"/>
+    <meta name="amendment-04" content="npub1wqzhml9h43xz862yapzw90g9y4lr7rn2kj5fue9r9z98hmpcd6gq7ajmce"/>
+    <meta name="amendment-05" content="npub10kev4czn9z6k3a97mde8etwhkcel90hupcr8qv0pssqnx590k45qqnsrd4"/>
+    <meta name="amendment-06" content="npub1mj2ntg3706ywyaprh5l5y6a7yt489hdvnfjy9c3fuqseg9qmdrmsx7ugym"/>
+    <meta name="amendment-07" content="npub1559d3z0whxevkdh3wslnyw3pet4dhdz85an4pdlt8x3qkzswkuxq3enh2q"/>
+    <meta name="amendment-08" content="npub1xxzv79jlx8hdh6m3h8y8k94dszaqsnfheyapkedm2lqeqah2690sg3aaev"/>
+    <meta name="amendment-09" content="npub1cj04eyrw8ljs8xdrp2kja4gmhyj257wt20qvj3uugwfgquy9smlswl76l9"/>
+    <meta name="amendment-10" content="npub1ujnzllh0h52420hsmmzdd9g7yu9c7jj84kmax8l89hkgs9sl43mqgk4s5r"/>
+    <meta name="amendment-11" content="npub19cgdqarf82m0uza9h5d87lpal9gtyqplkf8a2p44tc8x4veqj6vscfyefk"/>
+    <meta name="amendment-12" content="npub1f3hsc2zkpe7d4xz4axye7m72sdyvehewpa7am33kywhascdu2jusallu5s"/>
+    <meta name="amendment-13" content="npub1ff94mhca6jp9ey85qlke0krd585pxh3sl3jm73xmx9lu7utlfcwsr0vvn6"/>
+    <meta name="amendment-14" content="npub1waptxvykdjey8weq9yr0cuz0vyg7fznu34m5u84hxghqp6slty2sl2resd"/>
+    <meta name="amendment-15" content="npub1f2awrt3njpyf4dg3zvjv54fdmtx3pnxphg9jjzm5nc8wsmf3cuzs3f9ace"/>
+    <meta name="amendment-16" content="npub1g6rh3xrl0jgeyn58h4tryqk9lr78anpwpsnwhtycwvgr4jxarhaq0qj5ej"/>
+    <meta name="amendment-17" content="npub15c5h63rha82ca6sdznpjux08mu0yuf3mx29mu9xnpx439pteydjsry0vw9"/>
+    <meta name="amendment-18" content="npub1u3yxcd6ygehlf9duyhmj6gsfhavlrr8n5kcvu997k47v4leqmgrqgkum2h"/>
+    <meta name="amendment-19" content="npub1c0wjh39pmqu7tam3n6cupzv9qhr979msq6tcmmsh5c6aweacczeqnk3c3g"/>
+    <meta name="amendment-20" content="npub10a9knjqr5stdup4sj09wjynlc5dyuhhydhzkg8r6yge8f6gvjvts0a0f2q"/>
+    <meta name="amendment-21" content="npub18vfl9jvusfwv2g8uqtqrh87gkf75ruugw5wrj9z9rq8zwng547uqz2uex3"/>
+    <meta name="amendment-22" content="npub13ksezms7eddqq2a8e6lrgqksvy5afrync75tux5y2t73y4m2wh3s3evt8g"/>
+    <meta name="amendment-23" content="npub1wp6nm5p9hmlqzjt7wnwz7swqd7dqx044fj7hrmyufjshm8f252es205zkg"/>
+    <meta name="amendment-24" content="npub1ermmv0p6zmp75lcmrkqm4mas4vrtmpvfsm97ua739emp2dr6xmwsxv7ajc"/>
+    <meta name="amendment-25" content="npub14xd46cq7a4lf3zlptgylf3du3u8lmgas3wat55lechwqw9cgd97qla0ray"/>
+    <meta name="amendment-26" content="npub1ps0lded3ztsyjyfn3xeqgq5qzaxa52yupusshpr9sawzhvhnawjqqugp84"/>
+    <meta name="amendment-27" content="npub1q0qmn296g8jpkdzj553k245x5yrd5pn7sgngal9m3sztm9yue7xs2u0hhn"/>
+
+    <meta name="we-the-people" content="
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+=wwdP
+-----END PGP PUBLIC KEY BLOCK-----
+"/>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttonItems = document.querySelectorAll('.button-item');
+
+            buttonItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const hoverImage = item.querySelector('.hover-image');
+                    const defaultImage = item.querySelector('.default-image');
+
+                    if (hoverImage && defaultImage) {
+                        const isHovered = hoverImage.style.opacity === '1';
+                        hoverImage.style.opacity = isHovered ? '0' : '1';
+                        defaultImage.style.opacity = isHovered ? '1' : '0';
+                    }
+                });
+            });
+
+            const focusArea = document.querySelector('.focus-area');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 1.00
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const hoverImage = entry.target.querySelector('.hover-image');
+                    const defaultImage = entry.target.querySelector('.default-image');
+
+                    if (hoverImage && defaultImage) {
+                        if (entry.isIntersecting) {
+                            hoverImage.style.opacity = '1';
+                            defaultImage.style.opacity = '0';
+                        } else {
+                            hoverImage.style.opacity = '0';
+                            defaultImage.style.opacity = '1';
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            buttonItems.forEach(item => observer.observe(item));
+        });
+    </script>
+    <style>
+        .focus-area {
+            position: fixed;
+            top: 30%;
+            width: 100%;
+            height: 40%;
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="logo-container">
+            <img src="images/sad-treetop.jpg" alt="Sad Tree" class="logo">
+        </div>
+
+        <div class="intro-text">
+            <p>
+              Essential Liberty, Eternal Stories.<br>
+              Through knowledge only shall men be freed.<br>
+              For freedom’s breath belongs to you.
+            </p>
+        </div>
+
+        <a href="https://github.com/SadTreeBooks/sadtreebooks.github.io" class="fork-me-banner">
+          <img
+               loading="lazy" 
+               decoding="async" 
+               target="_blank" 
+               width="149" 
+               height="149" 
+               src="images/forkme.png" 
+               alt="Fork or Clone" 
+               loading="lazy"/>
+        </a>
+
+    </header>
+
+    <div class="focus-area"></div>
+
+    <main>
+        <section class="collection-material">
+            <center>
+              <h2 class="section-title">Roots Of Liberty</h2>
+              <h3 class="section-subtitle">#BookTok</h3>
+              <br><br>
+            </center>
+            <p>
+            </p>
+            <br>
+
+            <ul class="button-list">
+                <li class="button-item">
+                    <div class="entry-image">
+                        <img src="images/book-tree.jpg" alt="Sad Tree" class="default-image">
+                        <img src="images/sad-tree.jpg"  alt="Sad Tree" class="hover-image">
+                    </div>
+                    <a href="documents/Roots_of_Liberty.pdf" class="button">United States<br>Constitution<br>Establishment Clause<br>and Amendments</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="collection-material">
+            <center>
+              <h2 class="section-title">Roots Of Liberty (Abridged Version)</h2>
+              <h3 class="section-subtitle">Lesson 8. Believe in truth.</h3>
+              <br><br>
+            </center>
+
+            <ul class="button-list">
+                <li class="button-item">
+                    <div class="entry-image">
+                        <img src="images/book-tree.jpg" alt="Sad Tree" class="default-image">
+                        <img src="images/bench-tree.jpg" alt="Sad Tree" class="hover-image">
+                    </div>
+                    <a href="documents/Roots_of_Liberty__Establishment_Clause.pdf" class="button">United States<br>Establishment Clause</a>
+                </li>
+
+                <li class="button-item">
+                    <div class="entry-image">
+                        <img src="images/book-tree.jpg" alt="Sad Tree" class="default-image">
+                        <img src="images/shock-tree.jpg" alt="Sad Tree" class="hover-image">
+                    </div>
+                    <a href="documents/Roots_of_Liberty__Bill_of_Rights.pdf" class="button">United States<br>Bill Of Rights</a>
+                </li>
+
+                <li class="button-item">
+                    <div class="entry-image">
+                        <img src="images/book-tree.jpg" alt="Sad Tree" class="default-image">
+                        <img src="images/wind-tree.jpg" alt="Sad Tree" class="hover-image">
+                    </div>
+                    <a href="documents/Roots_of_Liberty__Amendments.pdf" class="button">United States<br>Constitution<br>Amendments 1-27</a>
+                </li>
+
+                <li class="button-item">
+                    <div class="entry-image">
+                        <img src="images/book-tree.jpg" alt="Sad Tree" class="default-image">
+                        <img src="images/fire-tree.jpg" alt="Sad Tree" class="hover-image">
+                    </div>
+                    <a href="documents/Roots_of_Liberty__Final_Canto.pdf" class="button">United States<br>Final Canto</a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="collection-material">
+          <h2 class="section-title">Yearning To Breathe Free</h2>
+          <h3 class="section-subtitle">Lesson 12. Take responsibility for the face of the world.</h3>
+          <h3 class="section-subtitle">Lesson 14. Give regularly to good causes, if you can.</h3>
+          <br><br>
+          <center>
+            <div class="logo-container">
+                <img src="images/sad-treetop.jpg" alt="Sad Tree" class="logo">
+            </div>
+            <div class="intro-text">
+                <h1>
+                  The New Colossus
+                <h1>
+                </h1>
+                  by Emma Lazarus, November 2, 1883
+                </h1>
+                <br>
+                <br>
+                <p>
+                  Not like the brazen giant of Greek fame,<br>
+                  With conquering limbs astride <b>from land to land</b>;<br>
+                  Here at our sea-washed, <span style="color: #8B0000;"><b>sunset gates</b></span> shall stand.<br>
+                </p>
+                <br>
+                <p>
+                  A mighty woman with a torch, whose flame<br>
+                  Is the imprisoned lightning, and her name<br>
+                  <span style="color: #8B0000;"><b>Mother of Exiles</b></span>. From her beacon-hand<br>
+                  Glows <b>world-wide welcome</b>; her mild eyes command<br>
+                  The air-bridged harbor that twin cities frame.<br>
+                </p>
+                <br>
+                <p>
+                  "Keep, ancient lands, your storied pomp!" cries she<br>
+                  With silent lips. "<b>Give me your tired, <span style="color: #8B0000;"><b>your poor</b></span style="color: #8B0000;">,<br>
+                  Your huddled masses <span style="color: #8B0000;">yearning to breathe free</b></span>,<br>
+                  The wretched refuse of your teeming shore.<br>
+                  Send these, the homeless, tempest-tost to me,<br>
+                  I lift my lamp beside the <span style="color: #8B0000;"><b>golden door</b></span>!".<br>
+                </p>
+            </div>
+
+            <div class="logo-container-colossus">
+                <img src="images/Liberty-Enlightening-the-World.jpg" alt="Liberty Enlightening the World" class="logo-colossus">
+                <br>
+                  <blockquote>
+                    <h3 class="section-subtitle"><span style="font-style: italic;">Blessed are the merciful,</span></h3>
+                    <h3 class="section-subtitle"><span style="font-style: italic;">for they shall receive mercy.</span></h3>
+                    <h3 class="section-parenthetical">— Matthew 5:7</h3>
+                  </blockquote>
+                <br>
+                <img src="images/New-Colossus-bronze-plaque.jpg" alt="bronze plaque of New Colossus" class="logo-colossus">
+            </div>
+
+          </center>
+        </section>
+
+        <section class="intro-material">
+            <center>
+              <h2 class="section-title">Roots Of Liberty</h2>
+              <h3 class="section-parenthetical">(An American Poem)</h3>
+              <h3 class="section-subtitle">Lesson 6. Be kind to our language.</h3>
+            </center>
+            <br>
+            <center>
+              <div class="logo-container-large">
+                <img src="images/sad-treetop.jpg" alt="Sad Tree" class="logo-large">
+              </div>
+            </center>
+        </section>
+
+        <section class="collection-material">
+          <center>
+
+            <div class="intro-text">
+                <br><br>
+                <h1 class="section-title">Prologue: The Sad Tree</h1>
+                <br>
+                <p>
+                  The saddest tree once said to me,<br>
+                  What use are stories if <b><span style="color: #8B0000;">none can read?</span></b><br>
+                  When voices fade and pages burn,<br>
+                  the <b><span style="color: #8B0000;">past repeats</span></b>, yet none discern.<br>
+                </p>
+            </div>
+
+            <div class="intro-text">
+                <br><br>
+                <center>
+                  <h1 class="section-title">Canto I: The Framer's Establishment</h1>
+                  <h3 class="section-subtitle">The U.S. Constitution, Articles 1, 2, and 3</h3>
+                  <br><br>
+                </center>
+                <p>
+                  Upon the parchment, ink still burns,<br>
+                  Where freedom’s voice in silence turns.<br>
+                  <b>Three pillars stand</b>, both firm and free,<br>
+                  A <span style="color: #8B0000;"> <b>trinity of sovereignty</b></span>.<br>
+                </p>
+                <br>
+                <p>
+                  <span style="color: #8B0000;"><b>The first</b></span>—a voice, the <span style="color: #8B0000;"><b>people's</b></span>
+                  will,<br>
+                  A <span style="color: #8B0000;"><b>Congress</b></span> sworn to write, fulfill.<br>
+                  In chambers vast, with measured hand,<br>
+                  They shape the laws that guard the land.<br>
+                </p>
+                <br>
+                <p>
+                  <span style="color: #8B0000;"><b>The second</b></span>—swift, with <b>duty sworn</b>,<br>
+                  A <span style="color: #8B0000;"><b>Leader</b></span> stands, the oath is worn.<br>
+                  To hold the helm, to guide, command,<br>
+                  Yet <b>bound within the law’s demand</b>.<br>
+                </p>
+                <br>
+                <p>
+                  <span style="color: #8B0000;"><b>The third</b></span>—a scale, a tempered mind,<br>
+                  Where <span style="color: #8B0000;"><b>Justice</b></span> sees, though fate is blind.<br>
+                  No crown, no sword, but wisdom’s gaze,<br>
+                  To <b>weigh the law</b>, to set its phase.<br>
+                </p>
+                <br>
+                <p>
+                <b>Three powers dance</b>, yet <span style="color: #8B0000;"><b>none shall reign</b></span>,<br>
+                  For balance is the golden chain.<br>
+                  No tyrant’s grip, no ruler’s blight,<br>
+                  But measured <b>law and <span style="color: #8B0000;"><b>people's</b></span> right</b>.<br>
+                </p>
+                <br>
+                <p>
+                  And when the tempest shakes the ground,<br>
+                  When doubts and fears rise up unbound,<br>
+                  Still let the charter's words be heard—<br>
+                  A living, breathing, guiding word.<br>
+                </p>
+                <br>
+                <p>
+                  That government <b>of</b> the just and wise,<br>
+                  That government <b>by</b> the free who rise,<br>
+                  That government <b>for</b> the truth they birth,<br>
+                  <b>Shall not perish from the earth</b>.<br>
+                </p>
+            </div>
+
+            <div class="intro-text">
+                <br><br>
+                <center>
+                  <h1 class="section-title">Canto II: The Torch Passed</h1>
+                  <h3 class="section-subtitle">The Bill of Rights</h3>
+                  <br><br>
+                </center>
+                <p>
+                  In the land of the brave, where <b>freedom</b> rings,<br>
+                  The <b>Bill of Rights</b> protects these things:<br>
+                </p>
+                <br>
+                <p>
+                  <span style="color: #8B0000;"><b>First</b></span>, your <span style="color: #8B0000;"><b>voice</b></span>, your <span style="color: #8B0000;"><b>faith</b></span>, your <span style="color: #8B0000;"><b>pen</b></span>,<br>
+                  Speak, believe, and gather again.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Second</b>, arms to guard the land,<br>
+                  A right to bear, a steady hand.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Third</b>, no soldiers in your bed,<br>
+                  Your home is yours, their stay is shed.<br>
+                </p>
+                <br>
+                <p>
+                  <span style="color: #8B0000;"><b>Fourth</b>,</span> <span style="color: #8B0000;"><b>your privacy</b></span>, secure and tight,<br>
+                  No search or seize without the right.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Fifth</b>, the law protects your say,<br>
+                  No double trials, no forced betray.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Sixth</b>, a trial, both swift and fair,<br>
+                  With counsel strong and jurors there.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Seventh</b>, in disputes of civil kind,<br>
+                  A jury's wisdom you shall find.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Eighth</b>, no punishment cruel or steep,<br>
+                  Bail and fines within the keep.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Ninth</b>, more rights than words can show,<br>
+                  For people hold what others don’t know.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Tenth</b>, powers not the feds' to wield,<br>
+                  <b>Belong to states</b>, or the people's shield.<br>
+                </p>
+                <br>
+                <p>
+                  So <span style="color: #8B0000;"><b>learn these rights</b></span>, hold them dear,<br>
+                  For liberty's light shall persevere.<br>
+                </p>
+            </div>
+
+            <div class="intro-text">
+                <br><br>
+                <center>
+                  <h1 class="section-title">Canto III: Balancing the Scales</h1>
+                  <h3 class="section-subtitle">Amendments 11 - 12</h3>
+                  <br><br>
+                </center>
+                <p>
+                  <b>Eleventh</b>, a state immune to lawsuit stands,<br>
+                  unless it yields to higher hands.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Twelth</b>, to choose a leader, votes must pair,<br>
+                  a president and vice declared.<br>
+                </p>
+            </div>
+
+            <div class="intro-text">
+                <br><br>
+                <center>
+                  <h1 class="section-title">Canto IV: Liberty Reborn</h1>
+                  <h3 class="section-subtitle">Amendments 13 - 27</h3>
+                  <br><br>
+                </center>
+                <p>
+                  <b>Thirtheenth</b>, no man shackled, no one sold,<br>
+                  the chains are broken, free and bold.<br>
+                </p>
+                <br>
+                <p>
+                  <span style="color: #8B0000;"><b>Fourteenth</b>, <b>born on this soil</b></span>, your <span style="color: #8B0000;"><b>rights are clear</b></span>,<br>
+                  equal laws, <span style="color: #8B0000;"><b>no rule of fear</b>.<br></span>
+                </p>
+                <br>
+                <p>
+                  <b>Fifteenth</b>, race alone won't block the way,<br>
+                  all men now have the right to say.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Sixteenth</b>, a nation grows, its burdens swell,<br>
+                  a tax to keep the ledger well.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Seventeenth</b>, no deals, <span style="color: #8B0000;"><b>no kings</b></span>, the choice is mine,<br>
+                  Senators picked by the people's sign.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Eighteenth</b>, no drink may flow, the law is passed,<br>
+                  but thirst for change will hold it fast.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Nineteenth</b>, a voice denied no more shall be,<br>
+                  women claim their right to plea.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Twentieth</b>, the date is set, no time to stall,<br>
+                  <span style="color: #8B0000;"><b>January’s oath will lead us all</span></b>.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Twenty-first</b>, the ban reversed, the barrels flow,<br>
+                  Prohibition falls below.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Twenty-second</b>, no ruler stays beyond their turn,<br>
+                  two terms mark the time to learn.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Twenty-third</b>, the silent vote in D.C. heard,<br>
+                  three voices joined, their rights conferred.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Twenty-fourth</b>, <span style="color: #8B0000;"><b>no price to vote, no poll tax due</span></b>,<br>
+                  your voice is free, your choice stays true.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Twenty-fifth</b>, if power wanes and leaders fall,<br>
+                  this line of hands will bear it all.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Twenty-sixth</b>, old enough to serve and fight,<br>
+                  <span style="color: #8B0000;"><b>young shall vote</span></b> to <b>set things right</b>.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Twenty-seventh</b>, no hasty rise in Congress’ pay,<br>
+                  change must wait for the next array.<br>
+                </p>
+            </div>
+
+            <div class="intro-text">
+                <br><br>
+                <center>
+                  <h1 class="section-title">Final Canto: Upon This Parchment</h1>
+                </center>
+                <br><br>
+                <p>
+                  <span style="color: #8B0000;"><b>Two hundred rings</b>, <b>four decades</b></span> more,<br>
+                  the tree stood tall in years of yore.<br>
+                  Its roots held fast through flood and flame,<br>
+                  each scar a mark, <b>each ring a name</b>.<br>
+                </p>
+                <br>
+                <p>
+                  Like <b>those who fell</b> on fields of red,<br>
+                  my body, too, was torn and bled.<br>
+                  Yet though my form may turn to dust,<br>
+                  the <b>words</b> I bear were <span style="color: #8B0000;"><b>forged in trust</b></span>.<br>
+                </p>
+                <br>
+                <p>
+                  Beneath my boughs, with steady hand,<br>
+                  <b>they signed the dream</b> to guard this land.<br>
+                  Upon my flesh, the ink ran deep,<br>
+                  <b>a promise made for us to keep</b>.<br>
+                </p>
+                <br>
+                <p>
+                  Born to this soil with hope unspoiled,<br>
+                  Not lives once broken, bound, or toiled.<br>
+                  No heel shall press, no tyrant’s shoe,<br>
+                  For freedom’s breath belongs to you.<br>
+                </p>
+                <br>
+                <p>
+                  <b><span style="color: #8B0000;">Franklin</span></b> spoke with knowing grace:<br>
+                  <b>“A Republic—if you can keep its place.”</b><br>
+                  <b><span style="color: #8B0000;">“Those who yield their liberty’s light,<br>
+                  For fleeting safety lose their right.”</span></b><br>
+                </p>
+                <br>
+                <p>
+                  Then <b>Madison’s</b> creed, both clear and true:<br>
+                  <b>“Through knowledge shall men’s hope renew.”</b><br>
+                </p>
+                <br>
+                <p>
+                  And so we turn these pages still,<br>
+                  through war and peace, through hope and will.<br>
+                  The rings remain, though bark may fade—<br>
+                  <a>a testament</a> to what was made.<br>
+                </p>
+                <br>
+                <p>
+                  For <b>liberty is not bestowed</b>,<br>
+                  but fought, <b>defended</b>, earned, and sown.<br>
+                  This parchment stands, yet not alone—<br>
+                  it <b>breathes through us</b>; it is our own.<br>
+                </p>
+                <br>
+                <p>
+                  <b>Let none who perished die in vain</b>,<br>
+                  Let freedom’s spark through storms remain.<br>
+                  A land where voices shall be free,<br>
+                  A <b><span style="color: #8B0000;">government</span></b> of, by, and <b><span style="color: #8B0000;">for thee</span></b>,<br>
+                  Let courage rise and prove its worth,<br>
+                  <b><span style="color: #8B0000;">We shall not perish from the earth</span></b>.<br>
+                </p>
+            </div>
+
+          </center>
+
+        </section>
+
+        <section class="intro-material">
+            <center>
+              <h2 class="section-title">Three Ring Government</h2>
+              <h3 class="section-subtitle">by Lynn Ahrens</h3>
+            </center>
+            <ul class="entry-list">
+                <li class="entry-item">
+                    <div class="entry-image">
+                        <center>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pKSGyiT-o3o?si=jfgn4e4Dyi5v13KB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </center>
+                    </div>
+                </li>
+            </ul>
+            <a href="https://www.youtube.com/watch?v=pKSGyiT-o3o" alt="Three Ring Government (by Schoolhouse Rock!)">
+              <center>
+                <h3 class="section-subtitle">Lesson 9. Investigate.</h3>
+              </center>
+            </a>
+        </section>
+
+        <section class="collection-material">
+            <center>
+              <h2 class="section-title">To heal a forest, sow its first seed.</h2>
+              <h3 class="section-subtitle">Lesson 7. Stand out.</h3>
+              <h3 class="section-subtitle">Lesson 20. Be a patriot.</h3>
+              <br><br>
+            </center>
+            <ul class="button-list">
+
+                <li class="button-item">
+                    <div class="entry-image">
+                        <img src="images/book-tree.jpg" alt="Sad Tree" class="default-image">
+                        <img src="images/stump-tree.jpg" alt="Sad Tree" class="hover-image">
+                    </div>
+                    <a href="https://web.archive.org/web/20250121102808/https://www.whitehouse.gov/about-the-white-house/our-government/the-constitution" class="button">404 Not Found<br>US Constitution</a>
+                </li>
+
+                <li class="button-item">
+                    <div class="entry-image">
+                        <img src="images/book-tree.jpg" alt="Sad Tree" class="default-image">
+                        <img src="images/stump-tree.jpg" alt="Sad Tree" class="hover-image">
+                    </div>
+                    <a href="https://web.archive.org/web/20250121102808/https://www.whitehouse.gov/about-the-white-house/our-government/the-constitution" class="button">404 Not Found<br>US Constitution</a>
+                </li>
+
+                <li class="button-item">
+                    <div class="entry-image">
+                        <img src="images/book-tree.jpg" alt="Sad Tree" class="default-image">
+                        <img src="images/patriot-tree.jpg" alt="Sad Tree" class="hover-image">
+                    </div>
+                    <a href="https://github.com/SadTreeBooks/sadtreebooks.github.io" class="button-green">Fork or Clone<br>A New Seed</a>
+                </li>
+
+                <li class="button-item">
+                    <div class="entry-image">
+                        <img src="images/book-tree.jpg" alt="Sad Tree" class="default-image">
+                        <img src="images/stump-tree.jpg" alt="Sad Tree" class="hover-image">
+                    </div>
+                    <a href="https://web.archive.org/web/20250121102808/https://www.whitehouse.gov/about-the-white-house/our-government/the-constitution" class="button">404 Not Found<br>US Constitution</a>
+                </li>
+
+            </ul>
+
+            <h3 class="section-subtitle">Lesson 13. Hinder the one-party state.</h3>
+            <br><br>
+
+            <blockquote>
+              <h3 class="section-subtitle"><span style="font-style: italic;">However [political parties] may now and then answer popular ends,</span></h3>
+              <h3 class="section-subtitle"><span style="font-style: italic;">they are likely in the course of time and things to become potent engines,</span></h3>
+              <h3 class="section-subtitle"><span style="font-style: italic;">by which cunning,</span></h3>
+              <h3 class="section-subtitle"><span style="font-style: italic;">ambitious,</span></h3>
+              <h3 class="section-subtitle"><span style="font-style: italic;">and unprincipled men</span></h3>
+              <h3 class="section-subtitle"><span style="font-style: italic;">will be enabled to subvert</span></h3>
+              <h3 class="section-subtitle"><span style="font-style: italic;">the power of the people</span></h3>
+              <h3 class="section-subtitle"><span style="font-style: italic;">and to usurp for themselves the reins of government.</span></h3>
+              <h3 class="section-parenthetical">— George Washington, Farewell Address (1796)</h3>
+            </blockquote>
+
+            <br><br>
+
+            <blockquote>
+              <h3 class="section-subtitle"><span style="font-style: italic;">If the <a href="A_Great_Nation/web.archive.org/the-constitution/20250119214815/https:/www.whitehouse.gov/about-the-white-house/our-government/the-constitution/index.html"><b>freedom of speech</b></a> is taken away,</span></h3>
+              <h3 class="section-subtitle"><span style="font-style: italic;">then <a href="A_Great_Nation/web.archive.org/the-constitution/20250119214815/https:/www.whitehouse.gov/about-the-white-house/our-government/the-constitution/index.html"> dumb and silent </a> we may be led,</span></h3>
+              <h3 class="section-subtitle"><span style="font-style: italic;">like <b>sheep to the slaughter</b>.</span></h3>
+              <h3 class="section-parenthetical">— George Washington</h3>
+            </blockquote>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+          <p>With special thanks and appreciation to:<br>
+          Timothy Snyder (for all the above <b><i>Lessons</i></b>)<br>
+          George Washington (for this <b><i>Great</i></b> nation)<br>
+          A moment of silence, let us <a href="A_Great_Nation/index.html" style="color: white; font-weight: bold; text-decoration: underline; font-size: 18px;">not forget what once was</a>.<br>
+          </p>
+          <p>&copy; 2025 &#x1F318; &#x1F401; Anony Mouse (Just Curious). All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
